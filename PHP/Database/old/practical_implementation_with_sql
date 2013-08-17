@@ -1,0 +1,14 @@
+CREATE DATABASE nis_0931951; 
+USE nis_0931951;
+
+CREATE TABLE music(mid Integer NOT NULL,aid Integer NOT NULL,title Varchar(30), PRIMARY KEY(mid));
+CREATE TABLE genre(gid Integer NOT NULL, genre Varchar(30), PRIMARY KEY(gid));
+CREATE TABLE year(yid Integer NOT NULL,year Integer NOT NULL, PRIMARY KEY(yid));
+CREATE TABLE album(albid Integer NOT NULL,name Varchar(30), PRIMARY KEY(albid));
+CREATE TABLE artist(artid Integer NOT NULL, name Varchar(30), PRIMARY KEY(artid));
+CREATE TABLE customer(cid Integer NOT NULL, cityid Integer NOT NULL, name Varchar(30), PRIMARY KEY(cityid));
+CREATE TABLE rating(cid Integer NOT NULL,mid Integer NOT NULL, rating FLOAT NOT NULL, PRIMARY KEY(cid,mid));
+CREATE TABLE city(cityid Integer NOT NULL,city Varchar(30), PRIMARY KEY(cityid));
+CREATE TABLE attribute(aid Integer NOT NULL,gid Integer NOT NULL,yid Integer NOT NULL,artid Integer NOT NULL, albid Integer NOT NULL, length FLOAT NOT NULL, PRIMARY KEY(aid));
+
+SHOW TABLES;

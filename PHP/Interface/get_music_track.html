@@ -1,0 +1,33 @@
+<html>
+<head><title>Get Music Tracks</title></head>
+<body bgcolor = "#F7F2E0">
+<h1 align = "center">Music Database</h1>
+<br>
+<br>
+<h2 style="margin-left:5em">Get Music Tracks(by artist, name, album)(XML and XSLT):</h2>
+<p>
+<table width = 600>
+<tr>
+<td align = right>
+<form action = "get_music_track.php" method = "POST">
+Search criteria:
+<select name = criteria0>
+<option value = artist>artist</option>
+<option value = name>name</option>
+<option value = album>album</option>
+</select>
+<input type = "text" name = "value0">
+<br>
+<br>
+<input type = "checkbox" name = "xml" value = "xml" checked = "checked">Export XML File 
+<input type = "submit" value = "Find" style="margin-left:3em;">
+</form>
+</td>
+</tr>
+</table>
+<hr style="margin-left:5em; margin-right:5em">
+<center>
+<a href = "index.html">Back</a>
+</center>
+</body>
+</html>

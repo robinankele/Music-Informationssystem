@@ -1,0 +1,37 @@
+<html>
+<head><title>Get Customer</title></head>
+<body bgcolor = "#F7F2E0">
+<h1 align = "center">Music Database</h1>
+<br>
+<br>
+<h2 style="margin-left:5em">Search for a customer:</h2>
+<p>
+<table width = 600>
+<tr>
+<td align = right>
+<form action = "get_customer.php" method = "POST">
+Search criteria:
+<select name = criteria0>
+<option value = name>name</option>
+<option value = city>city</option>
+</select>
+<input type = "text" name = "value0">
+<br>
+optional: 
+<select name = criteria1>
+<option value = city>city</option>
+<option value = name>name</option>
+</select>
+<input type = "text" name = "value1">
+<br>
+<input type = "submit" value = "Find">
+</form>
+</td>
+</tr>
+</table>
+<hr style="margin-left:5em; margin-right:5em">
+<center>
+<a href = "index.html">Back</a>
+</center>
+</body>
+</html>

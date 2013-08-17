@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+
+<web-app>
+
+  <servlet>
+    <servlet-name>get_customer</servlet-name>
+    <description>Returns a customer</description>
+    <servlet-class>dbase2.musicdb.get_customer</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>get_music_track</servlet-name>
+    <description>Returns a music track</description>
+    <servlet-class>dbase2.musicdb.get_music_track</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>get_ratings</servlet-name>
+    <description>Returns a rating</description>
+    <servlet-class>dbase2.musicdb.get_ratings</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>get_recommended_music_track</servlet-name>
+    <description>Returns a recommended music track</description>
+    <servlet-class>dbase2.musicdb.get_recommended_music_track</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>insert_artist</servlet-name>
+    <description>Inserts an artist</description>
+    <servlet-class>dbase2.musicdb.insert_artist</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>insert_customer</servlet-name>
+    <description>Inserts a customer</description>
+    <servlet-class>dbase2.musicdb.insert_customer</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>insert_new_album</servlet-name>
+    <description>Inserts an album</description>
+    <servlet-class>dbase2.musicdb.insert_new_album</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>insert_new_music_track</servlet-name>
+    <description>Inserts a music track</description>
+    <servlet-class>dbase2.musicdb.insert_new_music_track</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>rate</servlet-name>
+    <description>Inserts or updates a rate</description>
+    <servlet-class>dbase2.musicdb.rate</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>insert_new_music_track_interface</servlet-name>
+    <description>Interface for inserting music tracks</description>
+    <servlet-class>dbase2.musicdb.insert_new_music_track_interface</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>rate_interface</servlet-name>
+    <description>Interface for rating</description>
+    <servlet-class>dbase2.musicdb.rate_interface</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>get_customer</servlet-name>
+    <url-pattern>get_customer</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>get_music_track</servlet-name>
+    <url-pattern>get_music_track</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>get_ratings</servlet-name>
+    <url-pattern>get_ratings</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>get_recommended_music_track</servlet-name>
+    <url-pattern>get_recommended_music_track</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>insert_artist</servlet-name>
+    <url-pattern>insert_artist</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>insert_customer</servlet-name>
+    <url-pattern>insert_customer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>insert_new_album</servlet-name>
+    <url-pattern>insert_new_album</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>insert_new_music_track</servlet-name>
+    <url-pattern>insert_new_music_track</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>rate</servlet-name>
+    <url-pattern>rate</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>insert_new_music_track_interface</servlet-name>
+    <url-pattern>insert_new_music_track_interface</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>rate_interface</servlet-name>
+    <url-pattern>rate_interface</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

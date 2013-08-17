@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="music_track.xsl"?>
+<!-- all music_tracks -->
+<music_tracks>
+<!-- music_track -->
+<music_track year = "2010" genre = "Rock">
+<title>Cheers</title>
+<album>Loud</album>
+</music_track>
+<!-- music_track -->
+<music_track year = "2011" genre = "Pop">
+<title>Farewell</title>
+<album>Talk That Talk</album>
+</music_track>
+</music_tracks>
